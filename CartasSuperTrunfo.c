@@ -25,27 +25,26 @@ scanf("%s", iniciar);
   printf("Qual é o nome da cidade: \n");
   scanf("%s", nome_cidade);
 
-  printf("Quantidade de habitantes: \n");
-  scanf("%d", população);
+ printf("População: \n");
+  scanf("%lf", &população);
 
   printf("Forneça a quantidade de KMs quadrados: \n");
-  scanf("%f", área);
+  scanf("%f", &área);
 
   printf("Qual o PIB?: \n");
-  scanf("%f",  pib);
+  scanf("%f",  &pib);
 
   printf("Quantidade de pontos turiticos: \n");
-  scanf("%d", turista);
-
+  scanf("%d", &turista);
 
 printf("Segue abaixo a primeira carta cadastrada:");
 printf("Estado: %s \n", estado);
 printf("Codigo: %s \n", codigo_carta);
 printf("Cidade: %s \n", nome_cidade);
-printf("Habitantes: %d \n", população);
+printf("Habitantes: %lf \n", população);
 printf("Kms área: %f\n", área);
-printf("PIB: %f", pib);
-printf("Quantidade de PT: %d", turista);
+printf("PIB: %f \n", pib);
+printf("Quantidade de PT: %d \n", turista);
 
 return 0;
 } 

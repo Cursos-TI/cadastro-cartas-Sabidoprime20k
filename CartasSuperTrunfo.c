@@ -97,6 +97,16 @@ double população2;
   printf("Densidade populacional: %f\n", densidade2);
   printf("PiB per capita: %f \n", pib_per_capita2);
 
+unsigned char comparação;
+
+if (pib_per_capita > pib_per_capita2) {
+  comparação = 1;
+  printf("A carta com maior PIB per capita é a primeira carta cadastrada! \n");
+} else if (pib_per_capita2 > pib_per_capita) {
+  comparação = 2; 
+  printf("A carta com maior PIB per capita é a segunda carta cadastrada! \n");
+}
+
   
 return 0;
 } 

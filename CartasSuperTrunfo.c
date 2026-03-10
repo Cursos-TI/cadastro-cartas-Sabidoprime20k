@@ -97,16 +97,48 @@ double população2;
   printf("Densidade populacional: %f\n", densidade2);
   printf("PiB per capita: %f \n", pib_per_capita2);
 
-unsigned char comparação;
+unsigned char comparaçao1, comparaçao2, comparacao3;
+int guerra;
 
-if (pib_per_capita > pib_per_capita2) {
-  comparação = 1;
+printf("O que você deseja comparar?\n");
+printf("1. Pib per capita\n");
+printf("2. Densidade populacional\n");
+printf("3. Quantidade de pontos turisticos\n");
+scanf("%d", &guerra);
+
+switch (guerra)
+{
+case 1:
+    if (pib_per_capita > pib_per_capita2) {
+  comparaçao1 = 1;
   printf("A carta com maior PIB per capita é a primeira carta cadastrada! \n");
 } else if (pib_per_capita2 > pib_per_capita) {
-  comparação = 2; 
+  comparaçao1 = 2; 
   printf("A carta com maior PIB per capita é a segunda carta cadastrada! \n");
 }
+    break;
+case 2:
+  if (densidade > densidade2) {
+  comparaçao2 = 1;
+  printf("A carta com maior densidade é a primeira carta cadastrada! \n");
+} else if (pib_per_capita2 > pib_per_capita) {
+  comparaçao2 = 2; 
+  printf("A carta com maior densidade é a segunda carta cadastrada! \n");
+}
+break;
+case 3:
+if (turista > turista2) {
+  comparacao3 = 1;
+  printf("A carta com mais pontos turisticos é a primeira carta cadastrada! \n");
+} else if (turista > turista2) {
+  comparacao3 = 2; 
+  printf("A carta com mais pontos turisicos é a segunda carta cadastrada! \n");
+}
 
-  
+default:
+printf("Tem opção 4 não seu burro........");
+    break;
+}
+
 return 0;
 } 
